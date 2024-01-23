@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khelau</title>
+    <link rel = "stylesheet" href="{% static 'css/style.css'%}">
+    
+</head>
+<body>  
+    <nav>
+        <div class="logo">
+        <p>KHELAU</p>
+    </div>
+    <ul>
+        <li><a href="{% url 'futsal_page' %}">Outdoor</a></li>
+        <li><a href="{% url 'indoor_page' %}">Indoor</a></li>
+        <li><a href="{% url 'contact_us_page' %}">Contact Us</a></li>
+    </ul>
+    </nav>
+    <div class="content-items">
+        <img src="static/images/test.png" alt="">
+        
+    </div>    
+    
+
+</body>
+</html>
+

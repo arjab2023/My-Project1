@@ -1,0 +1,18 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+
+{% block content %}
+    <img alt src="{% static 'myapp/shantinagar.png' %}" style="height: 150px; width: 180px">
+    <br>
+    <br>
+   <p><b>Name:</b> {{ futsal.name }}</p>
+   <p><b>Location:</b> {{ futsal.location }}</p>
+   <p><b>Price:</b> {{ futsal.price }}</p>
+   <p><b>Phone Number:</b> {{ futsal.phone }}</p>
+   <p><b>About:</b> {{ futsal.about }}</p>
+
+
+   <a class="btn btn-primary" href="{% url 'update_student' student.id %}">Update </a>
+   <a class="btn btn-danger"  href="{% url 'student' %}">Cancel</a>
+
+{% endblock %}
